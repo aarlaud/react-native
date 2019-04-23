@@ -1,0 +1,60 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.3
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:debug:20170905':
+    - metro-bundler > connect > compression > debug:
+        patched: '2019-04-23T23:36:03.889Z'
+    - metro-bundler > connect > debug:
+        patched: '2019-04-23T23:36:03.889Z'
+    - metro-bundler > connect > morgan > debug:
+        patched: '2019-04-23T23:36:03.889Z'
+    - metro-bundler > connect > connect-timeout > debug:
+        patched: '2019-04-23T23:36:03.889Z'
+    - metro-bundler > connect > serve-index > debug:
+        patched: '2019-04-23T23:36:03.889Z'
+    - metro-bundler > connect > express-session > debug:
+        patched: '2019-04-23T23:36:03.889Z'
+    - metro-bundler > connect > finalhandler > debug:
+        patched: '2019-04-23T23:36:03.889Z'
+    - metro-bundler > connect > serve-static > send > debug:
+        patched: '2019-04-23T23:36:03.889Z'
+    - metro-bundler > connect > body-parser > debug:
+        patched: '2019-04-23T23:36:03.889Z'
+  'npm:lodash:20180130':
+    - plist > xmlbuilder > lodash:
+        patched: '2019-04-23T23:36:03.889Z'
+  'npm:mime:20170907':
+    - metro-bundler > connect > serve-static > send > mime:
+        patched: '2019-04-23T23:36:03.889Z'
+  'npm:ms:20170412':
+    - metro-bundler > connect > debug > ms:
+        patched: '2019-04-23T23:36:03.889Z'
+    - metro-bundler > connect > connect-timeout > ms:
+        patched: '2019-04-23T23:36:03.889Z'
+    - metro-bundler > connect > compression > debug > ms:
+        patched: '2019-04-23T23:36:03.889Z'
+    - metro-bundler > connect > serve-index > debug > ms:
+        patched: '2019-04-23T23:36:03.889Z'
+    - metro-bundler > connect > express-session > debug > ms:
+        patched: '2019-04-23T23:36:03.889Z'
+    - metro-bundler > connect > serve-static > send > ms:
+        patched: '2019-04-23T23:36:03.889Z'
+    - metro-bundler > connect > finalhandler > debug > ms:
+        patched: '2019-04-23T23:36:03.889Z'
+    - metro-bundler > connect > connect-timeout > debug > ms:
+        patched: '2019-04-23T23:36:03.889Z'
+    - metro-bundler > connect > body-parser > debug > ms:
+        patched: '2019-04-23T23:36:03.889Z'
+    - metro-bundler > connect > morgan > debug > ms:
+        patched: '2019-04-23T23:36:03.889Z'
+    - metro-bundler > connect > serve-static > send > debug > ms:
+        patched: '2019-04-23T23:36:03.889Z'
+    - metro-bundler > connect > serve-favicon > ms:
+        patched: '2019-04-23T23:36:03.889Z'
+  'npm:negotiator:20160616':
+    - metro-bundler > connect > compression > accepts > negotiator:
+        patched: '2019-04-23T23:36:03.889Z'
+    - metro-bundler > connect > serve-index > accepts > negotiator:
+        patched: '2019-04-23T23:36:03.889Z'
