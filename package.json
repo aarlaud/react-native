@@ -136,7 +136,9 @@
     "test-android-all": "npm run test-android-build && npm run test-android-run-unit && npm run test-android-run-instrumentation && npm run test-android-run-e2e",
     "test-android-instrumentation": "npm run test-android-build && npm run test-android-run-instrumentation",
     "test-android-unit": "npm run test-android-build && npm run test-android-run-unit",
-    "test-android-e2e": "npm run test-android-build && npm run test-android-run-e2e"
+    "test-android-e2e": "npm run test-android-build && npm run test-android-run-e2e",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "bin": {
     "react-native": "local-cli/wrong-react-native.js"
@@ -159,7 +161,7 @@
     "base64-js": "^1.1.2",
     "chalk": "^1.1.1",
     "commander": "^2.9.0",
-    "connect": "^2.8.3",
+    "connect": "^3.6.5",
     "create-react-class": "^15.5.2",
     "debug": "^2.2.0",
     "denodeify": "^1.2.1",
@@ -181,12 +183,12 @@
     "npmlog": "^2.0.4",
     "opn": "^3.0.2",
     "optimist": "^0.6.1",
-    "plist": "^1.2.0",
+    "plist": "^3.0.1",
     "pretty-format": "^4.2.1",
     "promise": "^7.1.1",
     "prop-types": "^15.5.8",
     "react-clone-referenced-element": "^1.0.1",
-    "react-devtools-core": "^2.5.0",
+    "react-devtools-core": "^3.2.2",
     "react-timer-mixin": "^0.13.2",
     "regenerator-runtime": "^0.11.0",
     "rimraf": "^2.5.4",
@@ -195,9 +197,10 @@
     "stacktrace-parser": "^0.1.3",
     "whatwg-fetch": "^1.0.0",
     "ws": "^1.1.0",
-    "xcode": "^0.9.1",
+    "xcode": "^2.0.0",
     "xmldoc": "^0.4.0",
-    "yargs": "^9.0.0"
+    "yargs": "^12.0.2",
+    "snyk": "^1.150.0"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
@@ -215,5 +218,6 @@
     "react-test-renderer": "16.1.1",
     "shelljs": "^0.7.8",
     "sinon": "^2.2.0"
-  }
+  },
+  "snyk": true
 }
